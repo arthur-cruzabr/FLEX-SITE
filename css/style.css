@@ -29,4 +29,14 @@
     width: 80%;
     height: 90px;
     border: solid 1px red;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu {
+    width: 70%;
+    border: solid 1px red;
+    display: flex;
+    justify-content: space-around;
 }
