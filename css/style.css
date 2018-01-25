@@ -13,13 +13,15 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
+    background: url('../img/1900x1200_img_7.jpg') no-repeat;
+    background-size: cover;
+    background-position: left;
 }
 
 
 .menu-container {
     width: 100%;
     height: 130px;
-    border: solid 1px red;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -28,7 +30,6 @@
 .sub-menu-container {
     width: 80%;
     height: 90px;
-    border: solid 1px red;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -36,7 +37,6 @@
 
 .menu {
     width: 70%;
-    border: solid 1px red;
     display: flex;
     justify-content: space-around;
 }
