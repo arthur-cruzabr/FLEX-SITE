@@ -53,6 +53,19 @@
 .menu a {
     color: white;
     font-family: Montserrat;
+    display: block;
+}
+
+.menu a::after {
+    content: ' ';
+    height: 1px;
+    background: red;
+    width: 0;
+    display: block;
+}
+
+.menu a::before:hover {
+    width: 100%;
 }
 
 .logo > a{
