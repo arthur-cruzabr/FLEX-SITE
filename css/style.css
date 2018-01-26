@@ -59,13 +59,14 @@
 .menu a::after {
     content: ' ';
     height: 1px;
-    background: red;
+    background: white;
     width: 0;
     display: block;
+    transition: all .4s;
 }
 
-.menu a::before:hover {
-    width: 100%;
+.menu a:hover::after {
+    width: 50%;
 }
 
 .logo > a{
