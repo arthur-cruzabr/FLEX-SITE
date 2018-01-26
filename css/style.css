@@ -69,11 +69,25 @@
     width: 50%;
 }
 
+.logo {
+    transform: translateX(-300px);
+    transition: all .5s ease-in;
+    display: block;
+}
+
 .logo > a{
     font-family: Montserrat;
     color: white;
     font-size: 24px;
+
 }
+
+.logo.logo-anime {
+    display: block;
+    transition: all .5s;
+    transform: translateX(0px);
+}
+
 
 .container-text {
     width: 100%;
