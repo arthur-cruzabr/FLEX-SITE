@@ -1,7 +1,9 @@
 $('.container-text').hide();
 $(window).ready(function () {
-  $('.logo').addClass('logo-anime');
-  setTimeout(function() {$('.container-text').slideDown()} , 300);
+    $('.logo').addClass('logo-anime');
+    setTimeout(function () {
+        $('.container-text').slideDown()
+    }, 300);
 });
 
 $('.menu a').click(function (e) {
@@ -9,6 +11,30 @@ $('.menu a').click(function (e) {
     var id = $(this).attr('href');
     var scroll = $(id).offset().top;
     $('html, body').animate({
-       scrollTop: scroll
-    });
+        scrollTop: scroll
+    }, 500);
+});
+
+$(window).scroll(function () {
+    var top = $(this).scrollTop();
+    var sobre = Math.round($('.sobre').offset().top);
+    console.log(top);
+    console.log(sobre);
+    if (top == sobre) {
+        setTimeout(function () {
+            $('.menu-container').hide();
+            $('.menu-container').css({
+                position: 'fixed',
+                background: 'black'
+            });
+            $('.menu-container').slideDown();
+        }, );
+    } else {
+        $('.menu-container').show();
+        $('.menu-container').css({
+            position: 'static',
+            background: 'none'
+        });
+
+    }
 });
