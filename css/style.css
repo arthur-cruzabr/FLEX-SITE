@@ -1,3 +1,7 @@
+/*CHARSET DO CSS*/
+
+@charset "UTF-8";
+
 /*RESET*/
 
 * {
@@ -19,13 +23,33 @@
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
 }
 
+/*
 body {
     overflow: hidden;
 }
+*/
+
+/*LOADING*/
+
+.caregando {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-pai {
+    display: none;
+}
+
+/*END-LOADING*/
+
+/*CABECALHO*/
 
 .cabecalho-container {
     width: 100%;
-    height: 97vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     background: url('../img/1900x1200_img_7.jpg') no-repeat;
@@ -33,6 +57,9 @@ body {
     background-position: left;
 }
 
+/*END-CABECALHO*/
+
+/*MENU*/
 
 .menu-container {
     width: 100%;
@@ -56,6 +83,8 @@ body {
     justify-content: space-around;
 }
 
+/*MENU-EFEITOS-BOTOES*/
+
 .menu a {
     color: white;
     font-family: Montserrat;
@@ -75,6 +104,9 @@ body {
     width: 50%;
 }
 
+/*END-MENU*/
+
+/*LOGO-SITE*/
 .logo {
     transform: translateX(-300px);
     transition: all .5s ease-in;
@@ -87,12 +119,14 @@ body {
     font-size: 24px;
 
 }
-
+/*EFEITO ANIMAÇÃO DA LOGO*/
 .logo.logo-anime {
     display: block;
     transition: all .5s;
     transform: translateX(0px);
 }
+
+/*END-LOGO*/
 
 
 .container-text {
@@ -139,28 +173,4 @@ body {
 .btn:hover {
     color: black;
     background: white;
-}
-
-.sobre {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: flex-end;
-}
-
-#teste {
-    width: 100%;
-    height: 100vh;
-}
-
-.container-pai {
-    display: none;
-}
-
-.caregando {
-    display: flex;
-    width: 100%;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
 }
