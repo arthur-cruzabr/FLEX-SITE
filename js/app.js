@@ -27,22 +27,23 @@ $(window).scroll(function () {
     var sobre = Math.round($('.sobre').offset().top);
     console.log(top);
     console.log(sobre);
-    if (top >= sobre) {
+    if (top == sobre) {
         setTimeout(function () {
             $('.menu-container').hide();
             $('.menu-container').css({
                 position: 'fixed',
-                background: 'black'
+                background: 'black',
+                height: '50px',
+                zIndex: '1000'
             });
             $('.menu-container').slideDown();
         }, );
     } else {
-        //        $('.menu').removeClass('anime');
         $('.menu-container').show();
         $('.menu-container').css({
             position: 'static',
             background: 'none',
-            height: '100px'
+            height: '130px'
         });
 
     }
