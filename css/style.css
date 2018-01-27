@@ -8,13 +8,15 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+
 /*FONTFACE*/
+
 @font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v12/zhcz-_WihjSQC0oHJ9TCYPk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v12/zhcz-_WihjSQC0oHJ9TCYPk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
 }
 
 body {
@@ -79,7 +81,7 @@ body {
     display: block;
 }
 
-.logo > a{
+.logo > a {
     font-family: Montserrat;
     color: white;
     font-size: 24px;
@@ -124,7 +126,7 @@ body {
 .btn {
     color: white;
     font-family: Montserrat;
-    border: solid 0.5px rgba(255,255,255, 0.2);
+    border: solid 0.5px rgba(255, 255, 255, 0.2);
     background-color: transparent;
     padding: 20px 15px;
     font-size: 20px;
