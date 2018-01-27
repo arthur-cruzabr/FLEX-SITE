@@ -1,8 +1,15 @@
+$(window).on('load', function () {
+    $('.caregando').fadeOut();
+    $('.container-pai').fadeIn();
+});
+
 $('.container-text').hide();
-$(window).ready(function () {
-    $('.logo').addClass('logo-anime');
+$(window).on('load', function () {
     setTimeout(function () {
-        $('.container-text').slideDown()
+        $('.logo').addClass('logo-anime');
+        setTimeout(function () {
+            $('.container-text').slideDown()
+        }, 300);
     }, 300);
 });
 
@@ -20,7 +27,7 @@ $(window).scroll(function () {
     var sobre = Math.round($('.sobre').offset().top);
     console.log(top);
     console.log(sobre);
-    if (top == sobre) {
+    if (top >= sobre) {
         setTimeout(function () {
             $('.menu-container').hide();
             $('.menu-container').css({
@@ -30,10 +37,12 @@ $(window).scroll(function () {
             $('.menu-container').slideDown();
         }, );
     } else {
+        //        $('.menu').removeClass('anime');
         $('.menu-container').show();
         $('.menu-container').css({
             position: 'static',
-            background: 'none'
+            background: 'none',
+            height: '100px'
         });
 
     }
